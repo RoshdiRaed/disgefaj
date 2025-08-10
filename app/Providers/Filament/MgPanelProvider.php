@@ -56,4 +56,14 @@ class MgPanelProvider extends PanelProvider
                 Authenticate::class,
             ]);
     }
+    // public function boot(): void
+    // {
+    //     Filament::serving(function () {
+    //         Filament::registerRenderHook(
+    //             'head.end',
+    //             fn () => '<link href="' . asset('css/filament-custom.css') . '" rel="stylesheet">'
+    //         );
+    //     });
+    // }
+
 }
