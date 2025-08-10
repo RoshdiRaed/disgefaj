@@ -10,6 +10,6 @@ class HomeController extends Controller
     public function index()
     {
         $skills = Skill::all();
-        return view('welcome', compact('skills'));
+        return view('welcome', compact('projects', 'skills'));
     }
 }
