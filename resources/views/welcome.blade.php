@@ -247,7 +247,7 @@
 
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                @foreach (\App\Models\Project::all() as $project)
+                @foreach ($projects as $project)
                     <div class="card-hover bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
                         <div class="relative overflow-hidden h-56">
                             <div

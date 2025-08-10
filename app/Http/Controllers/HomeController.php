@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Skill;
-use Illuminate\Http\Request;
+use App\Models\Project; // أضف هذا
 
 class HomeController extends Controller
 {
     public function index()
     {
         $skills = Skill::all();
-        return view('welcome', compact('skills'));
+        $projects = Project::all(); // جلب المشاريع هنا
+        return view('welcome', compact('skills', 'projects'));
     }
 }
