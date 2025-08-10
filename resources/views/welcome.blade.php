@@ -455,15 +455,15 @@
                 <div
                     class="group bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg text-center hover:transform hover:scale-110 hover:rotate-3 transition-all duration-300 cursor-pointer">
                     <div class="text-[#404EED] text-5xl mb-4 group-hover:animate-bounce">
-                        <img src="{{ asset('storage/' . $skill->icon_path) }}" loading="lazy" alt="{{ $skill->name }} icon" class="w-12 h-12 mx-auto">
+                        <img src="{{ asset('storage/' . $skills->icon_path) }}" loading="lazy" alt="{{ $skills->name }} icon" class="w-12 h-12 mx-auto">
                     </div>
-                    <h3 class="font-bold text-lg mb-2">{{ $skill->name }}</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ $skill->description }}</p>
+                    <h3 class="font-bold text-lg mb-2">{{ $skills->name }}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ $skills->description }}</p>
                     <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                        <div class="bg-gradient-to-r {{ $skill->gradient_colors }} h-2 rounded-full transition-all duration-1000 animate-pulse"
-                            style="width: {{ $skill->proficiency_percentage }}%"></div>
+                        <div class="bg-gradient-to-r {{ $skills->gradient_colors }} h-2 rounded-full transition-all duration-1000 animate-pulse"
+                            style="width: {{ $skills->proficiency_percentage }}%"></div>
                     </div>
-                    <span class="text-xs text-gray-500 mt-1 block">{{ $skill->proficiency_text }}</span>
+                    <span class="text-xs text-gray-500 mt-1 block">{{ $skills->proficiency_text }}</span>
                 </div>
             @endforeach
         </div>
