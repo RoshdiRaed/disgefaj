@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import '../css/filament-custom.css';
+// import '../css/filament-custom.css';
 
 export default defineConfig({
     plugins: [
