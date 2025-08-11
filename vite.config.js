@@ -1,13 +1,15 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-// import '../css/filament-custom.css';
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: 'resources/js/app.js',
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+                'resources/css/filament-custom.css', // Ensure this is included
+            ],
             refresh: true,
         }),
     ],
 });
-
