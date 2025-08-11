@@ -25,8 +25,8 @@ class MgPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->id('mg')
-            ->path('mg')
+            ->id('moge')
+            ->path('moge')
             ->login()
             ->colors([
                 'primary' => Color::Amber,
