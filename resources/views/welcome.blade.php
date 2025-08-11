@@ -120,7 +120,7 @@
                         </a>
 
                         <!-- Login Button -->
-                        <a href="mg/login"
+                        <a href="moge/login"
                             class="relative w-12 h-12 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-gray-100 transition-all duration-300 group shadow-lg">
                             <!-- Key Icon -->
                             🔑
