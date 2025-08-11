@@ -1,22 +1,24 @@
 <?php
-
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 
 class AdminUserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run()
+    public function run(): void
     {
-        $user = User::create([
-            'name' => 'moge',
-            'email' => 'moge@gmail.com',
-            'password' => bcrypt('moge'),
-        ]);
+        if (!User::where('email', 'moge@gmail.com')->exists()) {
+            $user = User::create([
+                'name' => 'moge',
+                'email' => 'moge@gmail.com',
+                'password' => bcrypt('your-secure-password'), // استبدل بكلمة مرور قوية
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+
+            // إذا كنت تستخدم حزمة Spatie لإدارة الأدوار
+            // $user->assignRole('admin');
+        }
     }
 }
